@@ -9,7 +9,8 @@ import data from '../jsonData/data.json';
 import { FriendList } from './FriendList/FriendList';
 import friends from '../jsonData/friends.json';
 
-console.log(friends);
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import transactions from '../jsonData/transactions.json';
 
 export const App = () => {
   return (
@@ -31,6 +32,10 @@ export const App = () => {
 
       <div className={css.container}>
         <FriendList frendList={friends} />
+      </div>
+
+      <div className={css.container}>
+        <TransactionHistory items={transactions} />
       </div>
     </div>
   );
