@@ -2,6 +2,9 @@ import { Profile } from './Profile/Profile';
 import user from '../jsonData/user.json';
 import css from '../components/App.module.css';
 
+import { Statistics } from './Statistics/Statistics';
+import data from '../jsonData/data.json';
+
 export const App = () => {
   return (
     <div className={css.container}>
@@ -12,6 +15,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <div>
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
+      </div>
     </div>
   );
 };
