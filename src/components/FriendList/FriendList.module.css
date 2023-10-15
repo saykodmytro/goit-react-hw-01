@@ -1,0 +1,38 @@
+.list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  box-shadow: 10px 8px 35px -9px rgba(0, 0, 0, 0.91);
+}
+
+.span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.online {
+  background-color: green;
+}
+.offline {
+  background-color: red;
+}
+
+.imgAvat {
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 20px;
+}

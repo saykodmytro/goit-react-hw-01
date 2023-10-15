@@ -1,4 +1,3 @@
-import React from 'react';
 import css from './Statistics.module.css';
 
 import { getRandomHexColor } from 'utils/randomColor';
